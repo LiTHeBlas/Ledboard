@@ -716,17 +716,17 @@ void diagnostic_pattern1(){
 void diagnostic_pattern2(){
     for(int i=0; i < 8; i++){
       if( i % 2 == 0){
-           digitalWrite(led_pins[i],HIGH);  
+           digitalWrite(led_pins[i],HIGH);
       }else{
-         digitalWrite(led_pins[i],LOW); 
+         digitalWrite(led_pins[i],LOW);
       }
   }
   clock_once();
   for(int i=0; i < 8; i++){
     if( i % 2 == 1){
-       digitalWrite(led_pins[i],HIGH); 
+       digitalWrite(led_pins[i],HIGH);
     }else{
-       digitalWrite(led_pins[i],LOW); 
+       digitalWrite(led_pins[i],LOW);
     }
   }  
   clock_once();
